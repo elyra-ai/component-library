@@ -29,6 +29,6 @@ lint-scripts: test-dependencies
 	flake8 .
 
 lint-notebooks: test-dependencies
+	nbqa flake8 */*.ipynb
 
 lint: lint-scripts lint-notebooks ## Run linters
-
