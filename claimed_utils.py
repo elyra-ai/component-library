@@ -20,15 +20,3 @@ def zipdir(target, path):
 def unzip(target, zipfile_name):
     with zipfile.ZipFile(zipfile_name, 'r') as zip_ref:
         zip_ref.extractall(target)
-        
- def check_and_get_checkpoint_asset(checkpoint_ip, checkpoint_user, checkpoint_pass, asset_name)
-    client = Minio(checkpoint_ip, checkpoint_user, checkpoint_pass, secure=False)
-
-    objects = client.list_objects(checkpoint_bucket)
-    for obj in objects:
-        if asset_name == obj.object_name:
-            client.fget_object(checkpoint_bucket, asset_name, asset_name)
-            return True
-    return False
-
-    
