@@ -7,6 +7,8 @@ exclude = __init__.py
 ignore =
     # Import formatting
     E4,
+    # allow Module level import at top of file as "pip install" needs to go first
+    E402,
     # Comparing types instead of isinstance
     E721,
     # Assigning lambda expression
@@ -17,6 +19,8 @@ ignore =
     W504,
     # Include name with TODOs as in # TODO(yourname)
     H101,
+    # Allow for License header missing
+    H102,
     # Do not import more than one module per line
     H301,
     # Alphabetically order imports by the full module path

@@ -29,7 +29,6 @@ lint-scripts: test-dependencies
 	flake8 .
 
 lint-notebooks: test-dependencies
-	# Ignoring E402 "module level import not on top of file" because "pip install" needs to go first
-	nbqa flake8 --ignore=H102,E402 */*.ipynb
+	nbqa flake8 --ignore=E4,E402,E721,E731,E741,W504,H101,H102,H301,H306,H404,H405 */*.ipynb
 
 lint: lint-scripts lint-notebooks ## Run linters
