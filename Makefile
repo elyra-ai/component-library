@@ -29,6 +29,6 @@ lint-scripts: test-dependencies
 	flake8 .
 
 lint-notebooks: test-dependencies
-	nbqa flake8 --ignore=H102 */*.ipynb
+	nbqa flake8 --ignore=H102,E402 */*.ipynb
 
 lint: lint-scripts lint-notebooks ## Run linters
