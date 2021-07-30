@@ -17,6 +17,8 @@ ignore =
     W504,
     # Include name with TODOs as in # TODO(yourname)
     H101,
+    # Allow for License header missing
+    H102,
     # Do not import more than one module per line
     H301,
     # Alphabetically order imports by the full module path
