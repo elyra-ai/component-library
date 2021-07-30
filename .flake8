@@ -7,8 +7,6 @@ exclude = __init__.py
 ignore =
     # Import formatting
     E4,
-    # allow Module level import at top of file as "pip install" needs to go first
-    E402,
     # Comparing types instead of isinstance
     E721,
     # Assigning lambda expression
